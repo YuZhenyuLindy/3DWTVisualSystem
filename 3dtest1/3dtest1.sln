@@ -3,11 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3dtest1", "3dtest1\3dtest1.csproj", "{B7C21C23-E296-4E73-BD12-CFFC0ECD5EFA}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{B02F9FF8-E57D-41D3-A70D-684810ECF896}"
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup2", "Setup2\Setup2.vdproj", "{76C39CC2-ECE0-4F95-BA38-F183ECB9642A}"
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup3", "Setup3\Setup3.vdproj", "{FD2C9184-A193-4A22-AE66-E678AF886CCC}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{68AE6E0E-7FEE-41A5-BA03-27EDF16E220B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,12 +15,8 @@ Global
 		{B7C21C23-E296-4E73-BD12-CFFC0ECD5EFA}.Debug|x86.Build.0 = Debug|x86
 		{B7C21C23-E296-4E73-BD12-CFFC0ECD5EFA}.Release|x86.ActiveCfg = Release|x86
 		{B7C21C23-E296-4E73-BD12-CFFC0ECD5EFA}.Release|x86.Build.0 = Release|x86
-		{B02F9FF8-E57D-41D3-A70D-684810ECF896}.Debug|x86.ActiveCfg = Debug
-		{B02F9FF8-E57D-41D3-A70D-684810ECF896}.Release|x86.ActiveCfg = Release
-		{76C39CC2-ECE0-4F95-BA38-F183ECB9642A}.Debug|x86.ActiveCfg = Debug
-		{76C39CC2-ECE0-4F95-BA38-F183ECB9642A}.Release|x86.ActiveCfg = Release
-		{FD2C9184-A193-4A22-AE66-E678AF886CCC}.Debug|x86.ActiveCfg = Debug
-		{FD2C9184-A193-4A22-AE66-E678AF886CCC}.Release|x86.ActiveCfg = Release
+		{68AE6E0E-7FEE-41A5-BA03-27EDF16E220B}.Debug|x86.ActiveCfg = Debug
+		{68AE6E0E-7FEE-41A5-BA03-27EDF16E220B}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

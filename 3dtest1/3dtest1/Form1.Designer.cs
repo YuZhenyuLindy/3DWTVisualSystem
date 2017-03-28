@@ -33,6 +33,7 @@
             this.axGlobeControl1 = new ESRI.ArcGIS.Controls.AxGlobeControl();
             this.axToolbarControl1 = new ESRI.ArcGIS.Controls.AxToolbarControl();
             this.axTOCControl1 = new ESRI.ArcGIS.Controls.AxTOCControl();
+            this.btnAnimation = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.axLicenseControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axGlobeControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).BeginInit();
@@ -55,6 +56,7 @@
             this.axGlobeControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axGlobeControl1.OcxState")));
             this.axGlobeControl1.Size = new System.Drawing.Size(1087, 593);
             this.axGlobeControl1.TabIndex = 1;
+            this.axGlobeControl1.OnMouseDown += new ESRI.ArcGIS.Controls.IGlobeControlEvents_Ax_OnMouseDownEventHandler(this.axGlobeControl1_OnMouseDown_1);
             this.axGlobeControl1.SizeChanged += new System.EventHandler(this.axGlobeControl1_SizeChanged);
             // 
             // axToolbarControl1
@@ -76,11 +78,22 @@
             this.axTOCControl1.Size = new System.Drawing.Size(220, 593);
             this.axTOCControl1.TabIndex = 3;
             // 
+            // btnAnimation
+            // 
+            this.btnAnimation.Location = new System.Drawing.Point(1250, 12);
+            this.btnAnimation.Name = "btnAnimation";
+            this.btnAnimation.Size = new System.Drawing.Size(75, 23);
+            this.btnAnimation.TabIndex = 4;
+            this.btnAnimation.Text = "动画";
+            this.btnAnimation.UseVisualStyleBackColor = true;
+            this.btnAnimation.Click += new System.EventHandler(this.btnAnimation_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1337, 658);
+            this.Controls.Add(this.btnAnimation);
             this.Controls.Add(this.axTOCControl1);
             this.Controls.Add(this.axToolbarControl1);
             this.Controls.Add(this.axGlobeControl1);
@@ -104,6 +117,7 @@
         private ESRI.ArcGIS.Controls.AxGlobeControl axGlobeControl1;
         private ESRI.ArcGIS.Controls.AxToolbarControl axToolbarControl1;
         private ESRI.ArcGIS.Controls.AxTOCControl axTOCControl1;
+        private System.Windows.Forms.Button btnAnimation;
     }
 }
 

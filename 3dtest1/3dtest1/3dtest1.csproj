@@ -35,32 +35,32 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ESRI.ArcGIS.3DAnalyst, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="ESRI.ArcGIS.AxControls, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
     <Reference Include="ESRI.ArcGIS.Carto, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Controls, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Display, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Geometry, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="ESRI.ArcGIS.GlobeCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Output, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="ESRI.ArcGIS.System, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="ESRI.ArcGIS.SystemUI, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Version, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
     <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -86,6 +86,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Timer.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,6 +99,30 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="data\2015isc\2015isc.tfw" />
+    <None Include="data\2015isc\2015isc.tif.enp" />
+    <None Include="data\2015isc\2015isc.tif.ovr" />
+    <None Include="data\2015isc\2015isc.tif.vat.dbf" />
+    <None Include="data\ASTGTM_N24E102.img\ASTGTM_N24E102U.img" />
+    <None Include="data\ASTGTM_N24E102.img\ASTGTM_N24E102U.img.enp" />
+    <None Include="data\ASTGTM_N24E102.img\ASTGTM_N24E102U.rrd" />
+    <None Include="data\LST150.3dd" />
+    <None Include="data\LST200.3dd" />
+    <None Include="data\LST300.3dd" />
+    <None Include="data\LST\LST.dat" />
+    <None Include="data\LST\LST.dat.enp" />
+    <None Include="data\LST\LST.hdr" />
+    <None Include="data\LST\LST.img" />
+    <None Include="data\LST\LST.img.enp" />
+    <None Include="data\LST\LST.tif.enp" />
+    <None Include="data\LST\LST.tif.ovr" />
+    <None Include="data\LST\LSTByte.hdr" />
+    <None Include="data\LST\LSTByte.img" />
+    <None Include="data\LST\LSTByte.img.enp" />
+    <None Include="data\LST\LSTByte.img.ovr" />
+    <None Include="data\LST\LSTByte.tif.enp" />
+    <None Include="data\LST\LSTByte.tif.ovr" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -107,6 +132,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\2015isc\2015isc.tif" />
+    <Content Include="data\2015isc\2015isc.tif.aux.xml" />
+    <Content Include="data\ASTGTM_N24E102.img\ASTGTM_N24E102U.img.aux.xml" />
+    <Content Include="data\LST\LST.tif" />
+    <Content Include="data\LST\LST.tif.aux.xml" />
+    <Content Include="data\LST\LSTByte.img.aux.xml" />
+    <Content Include="data\LST\LSTByte.tif" />
+    <Content Include="data\LST\LSTByte.tif.aux.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
